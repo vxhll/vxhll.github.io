@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal J | AI & Machine Learning Engineer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Vishal J, an AI & Machine Learning Engineer specializing in Generative AI, NLP, Deep Learning, and Computer Vision. Explore projects, research, and skills.">
+    <meta name="keywords" content="Vishal J, AI Engineer, Machine Learning Engineer, Generative AI, NLP, Deep Learning, Computer Vision, Portfolio, Bangalore, India">
+    <meta name="author" content="Vishal J">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vishal J | AI & Machine Learning Engineer">
+    <meta property="og:description" content="Building intelligent systems using LLMs, RAG Pipelines, Deep Learning, Computer Vision, and Cloud Technologies.">
+    <meta property="og:url" content="https://github.com/vxhll">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor Follower -->
+    <div class="cursor-follower" id="custom-cursor"></div>
+    <div class="cursor-dot" id="custom-cursor-dot"></div>
+
+    <!-- Cyber Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">&lt;VJ.ai /&gt;</div>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+            <div class="loader-status">Booting AI Environment... <span id="loader-percentage">0%</span></div>
+        </div>
+    </div>
+
+    <!-- Interactive Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Ambient Glow Lights -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-accent">&lt;</span>VJ<span class="logo-accent">.ai /&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#github" class="nav-link">GitHub</a>
+                <a href="#contact" class="nav-link btn-nav-contact">Contact</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge reveal">
+                    <span class="badge-dot"></span>
+                    <span>Available for Opportunities</span>
+                </div>
+                
+                <h1 class="hero-name reveal">Vishal J</h1>
+                
+                <h2 class="hero-title reveal">
+                    AI & ML Engineer | NLP | Deep Learning | Generative AI
+                </h2>
+                
+                <div class="typing-container reveal">
+                    <span class="typing-prefix">Specializing in</span>
+                    <span id="typing-text" class="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                
+                <p class="hero-description reveal">
+                    Building intelligent systems using LLMs, RAG Pipelines, Deep Learning, Computer Vision, and Cloud Technologies to solve real-world business challenges.
+                </p>
+                
+                <div class="hero-cta reveal">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <!-- Point to a mock resume file or assets path -->
+                    <a href="assets/Vishal_J_Resume.pdf" class="btn btn-secondary" download>
+                        <span>Download Resume</span>
+                        <i data-lucide="download"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+                
+                <div class="hero-socials reveal">
+                    <a href="https://github.com/vxhll" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vishal-j-btech" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:vishal.btech26@gmail.com" aria-label="Email" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                    <div class="location-badge">
+                        <i data-lucide="map-pin"></i>
+                        <span>Bangalore, Karnataka, India</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal">
+                <div class="visual-container">
+                    <div class="avatar-ring-outer">
+                        <div class="avatar-ring-inner">
+                            <img src="assets/avatar.jpg" alt="Vishal J - AI Engineer Profile Avatar" class="hero-avatar-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Profile</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="card-glow"></div>
+                    <i data-lucide="user" class="card-icon accent-blue"></i>
+                    <h3>Professional Summary</h3>
+                    <p>
+                        AI Engineer and Data Science professional with hands-on experience building and deploying LLM-powered applications, Retrieval-Augmented Generation (RAG) systems, Deep Learning models, and real-time AI applications.
+                    </p>
+                    <p>
+                        Passionate about translating research concepts into functional production pipelines that deliver tangible business value, leveraging modern MLOps tools, robust APIs, and scalable cloud infrastructure.
+                    </p>
+                </div>
+                
+                <div class="about-card glass-card education-card">
+                    <div class="card-glow"></div>
+                    <i data-lucide="graduation-cap" class="card-icon accent-purple"></i>
+                    <h3>Education</h3>
+                    <div class="education-details">
+                        <span class="edu-degree">B.Tech (Hons.) Artificial Intelligence & Data Science</span>
+                        <span class="edu-institution">M.A.M College of Engineering & Technology</span>
+                        <div class="edu-meta">
+                            <span class="edu-cgpa"><i data-lucide="award"></i> CGPA: 8.32</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-badges-mini">
+                        <span class="mini-badge">Generative AI</span>
+                        <span class="mini-badge">RAG Pipelines</span>
+                        <span class="mini-badge">Deep Learning</span>
+                        <span class="mini-badge">Computer Vision</span>
+                        <span class="mini-badge">FastAPI & AWS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- AI & GenAI -->
+                <div class="skills-category-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <i data-lucide="sparkles" class="category-icon accent-cyan"></i>
+                        <h3>AI & Generative AI</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">Artificial Intelligence</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skills-category-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <i data-lucide="layers" class="category-icon accent-purple"></i>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skills-category-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <i data-lucide="code" class="category-icon accent-blue"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skills-category-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <i data-lucide="server" class="category-icon accent-pink"></i>
+                        <h3>Backend & APIs</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">WebSocket</span>
+                        <span class="skill-tag">Streamlit</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="skills-category-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <i data-lucide="cloud" class="category-icon accent-orange"></i>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="skills-category-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="category-header">
+                        <i data-lucide="bar-chart-2" class="category-icon accent-green"></i>
+                        <h3>Data Science</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Predictive Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 2: YOLO-MineSafe -->
+                <div class="project-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <span class="project-status-badge research">
+                            <i data-lucide="book-open"></i> Published Paper
+                        </span>
+                        <i data-lucide="shield-alert" class="project-card-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>YOLO-MineSafe</h3>
+                        <p class="project-desc">
+                            Vision-based abnormal fall detection and emergency alert framework for isolated mining workers using YOLOv8 object detection model and OpenCV.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li><i data-lucide="check" class="check-icon"></i> YOLOv8 Fine-tuning</li>
+                                <li><i data-lucide="check" class="check-icon"></i> Real-time Fall Detection Engine</li>
+                                <li><i data-lucide="check" class="check-icon"></i> Automated Emergency Alert Pipeline</li>
+                                <li><i data-lucide="check" class="check-icon"></i> OpenCV Visual Overlay</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">YOLOv8</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/vxhll/YOLO-MineSafe" target="_blank" rel="noopener" class="btn-project-link">
+                            <i data-lucide="github"></i> Code
+                        </a>
+                        <button class="btn-project-link info btn-trigger-abstract">
+                            <i data-lucide="file-text"></i> Abstract
+                        </button>
+                        <button class="btn-project-link primary btn-trigger-cert">
+                            <i data-lucide="award"></i> Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2: RailBot -->
+                <div class="project-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <span class="project-status-badge completed">
+                            <i data-lucide="check-circle-2"></i> Completed
+                        </span>
+                        <i data-lucide="message-square" class="project-card-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>RailBot – AI Railway Assistant</h3>
+                        <p class="project-desc">
+                            An intelligent railway chatbot that assists users with railway information through conversational AI and NLP-powered interactions, utilizing advanced RAG indexing.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li><i data-lucide="check" class="check-icon"></i> Claude API Integration</li>
+                                <li><i data-lucide="check" class="check-icon"></i> RAG-based Query Answering</li>
+                                <li><i data-lucide="check" class="check-icon"></i> Live Streamlit Interface</li>
+                                <li><i data-lucide="check" class="check-icon"></i> Conversational Context Tracking</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Claude API</span>
+                            <span class="tech-tag">RAG</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/vxhll/railbot" target="_blank" rel="noopener" class="btn-project-link">
+                            <i data-lucide="github"></i> Code
+                        </a>
+                        <a href="https://railbot.onrender.com" target="_blank" rel="noopener" class="btn-project-link primary">
+                            <i data-lucide="external-link"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: FinIntel -->
+                <div class="project-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <span class="project-status-badge completed">
+                            <i data-lucide="check-circle-2"></i> Completed
+                        </span>
+                        <i data-lucide="trending-up" class="project-card-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>FinIntel – AI Financial Dashboard</h3>
+                        <p class="project-desc">
+                            Bloomberg-style financial intelligence dashboard integrating real-time market data with Generative AI and RAG-powered insights.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li><i data-lucide="check" class="check-icon"></i> Live Crypto Tracking & Stock Monitoring</li>
+                                <li><i data-lucide="check" class="check-icon"></i> AI-powered Financial Insights</li>
+                                <li><i data-lucide="check" class="check-icon"></i> Interactive Charting (Chart.js)</li>
+                                <li><i data-lucide="check" class="check-icon"></i> WebSockets & REST APIs</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Claude API</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://lnkd.in/g8xSbKSs" target="_blank" rel="noopener" class="btn-project-link">
+                            <i data-lucide="github"></i> Code
+                        </a>
+                        <a href="https://lnkd.in/g8xSbKSs" target="_blank" rel="noopener" class="btn-project-link primary">
+                            <i data-lucide="external-link"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Publication Section -->
+        <div class="two-column-layout scroll-reveal">
+            <!-- Experience -->
+            <section id="experience" class="experience-section">
+                <div class="section-header">
+                    <span class="section-subtitle">Timeline</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="card-glow"></div>
+                            <span class="timeline-date">AI & ML Intern</span>
+                            <h3>Svasti Technology Solutions</h3>
+                            <p class="timeline-company">AI Model Deployment | Data Processing | ML Pipelines</p>
+                            <p class="timeline-desc">Designed, trained, and packaged machine learning models for seamless deployment. Structured data processing layers to optimize inference times and robust pipelines.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="card-glow"></div>
+                            <span class="timeline-date">Machine Learning Intern</span>
+                            <h3>Future Wise</h3>
+                            <p class="timeline-company">Feature Engineering | Model Development | Predictive Analytics</p>
+                            <p class="timeline-desc">Implemented advanced feature engineering pipelines, trained regression and classification models, and supported predictive analytics tasks to extract business insights.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="card-glow"></div>
+                            <span class="timeline-date">Data Analytics Intern</span>
+                            <h3>VDart Academy</h3>
+                            <p class="timeline-company">Data Cleaning | SQL | Power BI | Business Analytics</p>
+                            <p class="timeline-desc">Spearheaded critical data quality transformations. Authored SQL procedures to aggregate core business records and created rich dashboards to expose operational trends.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Publication & Certifications -->
+            <div class="publication-certifications-wrapper">
+                <section id="publication" class="publication-section">
+                    <div class="section-header">
+                        <span class="section-subtitle">Academic Work</span>
+                        <h2 class="section-title">Research Publications</h2>
+                        <div class="header-line"></div>
+                    </div>
+                    
+                    <div class="publication-card glass-card">
+                        <div class="card-glow"></div>
+                        <div class="pub-badge"><i data-lucide="bookmark"></i> Research Paper</div>
+                        <h3>YOLO-MineSafe: A Vision-Based Abnormal Fall Detection and Emergency Alert Framework for Isolated Mining Workers</h3>
+                        <p class="pub-meta">
+                            <strong>Published in:</strong> IJSART Volume 12 Issue 4 (April 2026)
+                        </p>
+                        <div class="pub-stats">
+                            <div class="pub-stat">
+                                <span class="stat-num">7.883</span>
+                                <span class="stat-label">Impact Factor</span>
+                            </div>
+                            <div class="pub-stat">
+                                <span class="stat-num">YOLOv8</span>
+                                <span class="stat-label">Core Tech</span>
+                            </div>
+                        </div>
+                        <p class="pub-desc">
+                            Proposes a computer-vision based surveillance system that monitors mining conditions and raises alerts instantly using custom-trained bounding box regression algorithms.
+                        </p>
+                        <div class="pub-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                            <a href="https://github.com/vxhll/YOLO-MineSafe" target="_blank" rel="noopener" class="btn btn-outline btn-small">
+                                <i data-lucide="github"></i> Repository
+                            </a>
+                            <button class="btn btn-primary btn-small btn-trigger-abstract">
+                                <i data-lucide="file-text"></i> Read Abstract
+                            </button>
+                            <button class="btn btn-secondary btn-small btn-trigger-cert">
+                                <i data-lucide="award"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="certifications" class="certifications-section">
+                    <div class="section-header">
+                        <span class="section-subtitle">Credentials</span>
+                        <h2 class="section-title">Certifications & Awards</h2>
+                        <div class="header-line"></div>
+                    </div>
+                    
+                    <div class="certifications-list">
+                        <!-- Publication Certificate Promoted to Top -->
+                        <div class="cert-item glass-card btn-trigger-cert" style="cursor: pointer; border-color: rgba(0, 242, 254, 0.3);">
+                            <div class="card-glow"></div>
+                            <i data-lucide="award" class="cert-icon" style="color: var(--accent-cyan);"></i>
+                            <div class="cert-info">
+                                <h4>IJSART Publication Certificate</h4>
+                                <p>Abnormal Fall Detection Framework - Paper ID: IJSARTV12I4104890</p>
+                            </div>
+                            <i data-lucide="external-link" style="margin-left: auto; width: 16px; height: 16px; opacity: 0.6; color: var(--accent-cyan)"></i>
+                        </div>
+
+                        <div class="cert-item glass-card">
+                            <div class="card-glow"></div>
+                            <i data-lucide="cloud-lightning" class="cert-icon"></i>
+                            <div class="cert-info">
+                                <h4>AWS Academy Graduate</h4>
+                                <p>Cloud Foundations & Cloud Essentials</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-item glass-card">
+                            <div class="card-glow"></div>
+                            <i data-lucide="file-check" class="cert-icon"></i>
+                            <div class="cert-info">
+                                <h4>Deloitte Data Analytics</h4>
+                                <p>Job Simulation Program</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-item glass-card">
+                            <div class="card-glow"></div>
+                            <i data-lucide="brain-circuit" class="cert-icon"></i>
+                            <div class="cert-info">
+                                <h4>Generative AI in Action</h4>
+                                <p>Advanced Applied LLM Architectures</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-item glass-card">
+                            <div class="card-glow"></div>
+                            <i data-lucide="server-crash" class="cert-icon"></i>
+                            <div class="cert-info">
+                                <h4>Introduction to Cloud</h4>
+                                <p>Core Infrastructure & Services</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- GitHub Statistics Section -->
+        <section id="github" class="github-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Open Source</span>
+                <h2 class="section-title">GitHub Activity</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="github-grid">
+                <!-- User Profile Summary -->
+                <div class="github-profile-card glass-card">
+                    <div class="card-glow"></div>
+                    <div class="profile-header">
+                        <img id="github-avatar" src="https://avatars.githubusercontent.com/u/108399587?v=4" alt="Vishal J GitHub Avatar" class="profile-avatar">
+                        <div class="profile-meta">
+                            <h3 id="github-name">Vishal J</h3>
+                            <a href="https://github.com/vxhll" target="_blank" rel="noopener" class="profile-username">@vxhll</a>
+                            <span class="profile-location"><i data-lucide="map-pin"></i> Bangalore, India</span>
+                        </div>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat-box">
+                            <span id="github-repos-count" class="stat-number">-</span>
+                            <span class="stat-title">Public Repos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span id="github-followers-count" class="stat-number">-</span>
+                            <span class="stat-title">Followers</span>
+                        </div>
+                        <div class="stat-box">
+                            <span id="github-gists-count" class="stat-number">-</span>
+                            <span class="stat-title">Gists</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages & Metrics Widget -->
+                <div class="github-details-card glass-card">
+                    <div class="card-glow"></div>
+                    <h3>Top Languages & Streak</h3>
+                    <div class="metrics-container">
+                        <div class="languages-metrics">
+                            <div class="metric-bar-wrapper">
+                                <div class="metric-label">Python <span class="percent">78%</span></div>
+                                <div class="metric-bar"><div class="bar-fill python" style="width: 78%"></div></div>
+                            </div>
+                            <div class="metric-bar-wrapper">
+                                <div class="metric-label">JavaScript <span class="percent">12%</span></div>
+                                <div class="metric-bar"><div class="bar-fill javascript" style="width: 12%"></div></div>
+                            </div>
+                            <div class="metric-bar-wrapper">
+                                <div class="metric-label">SQL & HTML <span class="percent">10%</span></div>
+                                <div class="metric-bar"><div class="bar-fill other" style="width: 10%"></div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="streak-metrics">
+                            <div class="streak-box">
+                                <i data-lucide="flame" class="streak-icon"></i>
+                                <span class="streak-num">18 Days</span>
+                                <span class="streak-label">Current Streak</span>
+                            </div>
+                            <div class="streak-box">
+                                <i data-lucide="trophy" class="streak-icon"></i>
+                                <span class="streak-num">112 Days</span>
+                                <span class="streak-label">Longest Streak</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dynamic Repos Grid -->
+            <div class="github-repos-container">
+                <h3>Active Repositories</h3>
+                <div id="github-repos-list" class="github-repos-grid">
+                    <!-- Loaded dynamically via JavaScript with loading states -->
+                    <div class="loading-repo glass-card">
+                        <div class="shimmer-line title"></div>
+                        <div class="shimmer-line desc"></div>
+                        <div class="shimmer-line footer"></div>
+                    </div>
+                    <div class="loading-repo glass-card">
+                        <div class="shimmer-line title"></div>
+                        <div class="shimmer-line desc"></div>
+                        <div class="shimmer-line footer"></div>
+                    </div>
+                    <div class="loading-repo glass-card">
+                        <div class="shimmer-line title"></div>
+                        <div class="shimmer-line desc"></div>
+                        <div class="shimmer-line footer"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <div class="contact-card glass-card">
+                        <div class="card-glow"></div>
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:vishal.btech26@gmail.com">vishal.btech26@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card glass-card">
+                        <div class="card-glow"></div>
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <a href="tel:+916381143418">+91 6381143418</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="card-glow"></div>
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <span>Bangalore, Karnataka, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social-dock glass-card">
+                        <div class="card-glow"></div>
+                        <h4>Connect Internationally</h4>
+                        <div class="dock-icons">
+                            <a href="https://github.com/vxhll" target="_blank" rel="noopener" class="dock-btn" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vishal-j-btech" target="_blank" rel="noopener" class="dock-btn" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-panel glass-card">
+                    <div class="card-glow"></div>
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input type="email" id="form-email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" name="subject" required placeholder="Inquiry about Collaboration">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                    <div id="form-status" class="form-status"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span>&lt;</span>Vishal J<span class="logo-accent">.ai /&gt;</span>
+            </div>
+            <p class="footer-quote">"Building the Future with AI"</p>
+            <p class="footer-copyright">Designed & Developed by Vishal J &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- Abstract Modal -->
+    <div id="abstract-modal" class="modal-overlay">
+        <div class="modal-card glass-card">
+            <button class="modal-close-btn btn-close-abstract" aria-label="Close Abstract Modal"><i data-lucide="x"></i></button>
+            <div class="modal-header">
+                <span class="modal-subtitle">Research Paper Abstract</span>
+                <h3 class="modal-title">YOLO-MineSafe: A Vision-Based Abnormal Fall Detection and Emergency Alert Framework for Isolated Mining Workers</h3>
+                <div class="pub-authors">
+                    Dr. A. Mary Beula, Kingston J, Kowshik S, <strong>Vishal J</strong>, Sameer Ahamed S
+                </div>
+                <div class="pub-institution">
+                    Dept. of Artificial Intelligence & Data Science Engineering, M.A.M College of Engineering and Technology, Tiruchirappalli, Tamil Nadu, India
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="abstract-text">
+                    <h4>Abstract</h4>
+                    <p>Mining operations consistently rank among the world's most hazardous occupational environments, with workers stationed in isolated areas facing undetected fall risks, sudden health emergencies, and life-threatening incidents that current safety systems cannot address in real time. Existing solutions — passive CCTV, wearable accelerometers, and manual supervision — each fail to deliver autonomous, real-time incident detection across the expansive and harsh terrain of active mine sites. This paper introduces YOLO-MineSafe, a vision-based fall detection and emergency alert framework purpose-built to close this gap. The system continuously processes surveillance camera video through a fine-tuned YOLOv8 deep learning model, extracting bounding box geometry, posture orientation, and inter-frame motion vectors to identify anomalous body positions. A temporal classification module employing a 20-frame confirmation window at a 0.4 confidence threshold reliably distinguishes genuine fall events from ordinary work postures such as bending or crouching. Upon confirmed detection, multi-channel emergency alerts are dispatched immediately: an annotated incident image via email, an SMS to registered supervisors, and a simultaneous local audio alarm — all without human intervention. The system operates effectively in low-light and dust-heavy environments through dedicated preprocessing, requires no wearable devices, and provides a complete incident audit trail, representing a substantive advance toward reducing preventable fatalities in isolated mining environments.</p>
+                </div>
+                <div class="architecture-highlights">
+                    <h4>System Architecture Modules</h4>
+                    <div class="arch-modules">
+                        <div class="arch-module">
+                            <span class="module-num">01</span>
+                            <h5>Data Acquisition</h5>
+                            <p>IP Camera stream input, frames resized to 640x640, equalized and Gaussian filtered for dust/lighting conditions.</p>
+                        </div>
+                        <div class="arch-module">
+                            <span class="module-num">02</span>
+                            <h5>YOLOv8 Detection</h5>
+                            <p>Fine-tuned YOLOv8n network outputs bounding boxes and identifies human postures in real time.</p>
+                        </div>
+                        <div class="arch-module">
+                            <span class="module-num">03</span>
+                            <h5>Anomaly Engine</h5>
+                            <p>Calculates aspect ratios, downward centroid movement velocity, and body tilt angles relative to vertical.</p>
+                        </div>
+                        <div class="arch-module">
+                            <span class="module-num">04</span>
+                            <h5>Temporal Filter</h5>
+                            <p>Applies a 20-frame (approx 1s) persistence check to completely filter out typical bending or crouching tasks.</p>
+                        </div>
+                        <div class="arch-module">
+                            <span class="module-num">05</span>
+                            <h5>Alert Dispatch</h5>
+                            <p>Sends immediate SMS alerts via API, Emails with annotated incident screenshots, and raises local auditory alarms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="cert-modal" class="modal-overlay">
+        <div class="modal-card cert-modal-card glass-card">
+            <button class="modal-close-btn btn-close-cert" aria-label="Close Certificate Modal"><i data-lucide="x"></i></button>
+            
+            <!-- Styled Digital Certificate -->
+            <div class="certificate-container">
+                <div class="cert-border-outer">
+                    <div class="cert-border-inner">
+                        <div class="cert-seal">
+                            <i data-lucide="award" class="seal-icon"></i>
+                        </div>
+                        
+                        <div class="cert-header">
+                            <div class="ijsart-logo">
+                                <span class="accent-cyan">iJS</span>ART
+                            </div>
+                            <div class="ijsart-issn">ISSN [ONLINE]: 2395-1052</div>
+                            <h3 class="cert-board-title">THE BOARD OF IJSART</h3>
+                            <div class="cert-sub">INTERNATIONAL JOURNAL FOR SCIENCE AND ADVANCE RESEARCH IN TECHNOLOGY</div>
+                        </div>
+                        
+                        <div class="cert-body">
+                            <p class="cert-award-text">is hereby awarding this certificate to</p>
+                            <h2 class="cert-recipient">VISHAL J</h2>
+                            <p class="cert-reason">In recognition of publication of the paper entitled</p>
+                            <h4 class="cert-paper-title">YOLO-MINESAFE: A VISION-BASED ABNORMAL FALL DETECTION AND EMERGENCY ALERT FRAMEWORK FOR ISOLATED MINING WORKERS</h4>
+                            <p class="cert-pub-detail">Published in E-Journal, Volume 12, Issue 4 in April 2026</p>
+                        </div>
+                        
+                        <div class="cert-footer">
+                            <div class="cert-id-block">
+                                <span class="cert-id">PAPER ID: IJSARTV12I4104890</span>
+                                <span class="cert-web">www.ijsart.com | editor@ijsart.com</span>
+                            </div>
+                            <div class="cert-signature-block">
+                                <div class="signature-line"></div>
+                                <span class="sig-title">Patel</span>
+                                <span class="sig-label">Editor in Chief</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript Code -->
+    <script src="script.js"></script>
+</body>
+</html>
